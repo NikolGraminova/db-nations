@@ -56,6 +56,7 @@ public class Main {
                             int id = rs.getInt("id");
                             String region = rs.getString("region");
                             String continent = rs.getString("continent");
+
                             System.out.println(country + "          " + id + "          " + region + "          " + continent);
                         }
                     }
@@ -69,6 +70,7 @@ public class Main {
                         System.out.print("Languages: ");
                         while(rs.next()){
                             String language = rs.getString("language");
+
                             System.out.print(language + " ");
                         }
                     }
@@ -86,7 +88,6 @@ public class Main {
                             System.out.println("Population: " + population);
                             System.out.println("GDP: " + gdp + "\n");
                         }
-
                     }
                 }
             }
